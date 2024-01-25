@@ -22,12 +22,9 @@ const ProductCard = ({
   return (
     <div className="product-card">
       <img src={photo} alt="name" />
-      <div className="product-mid">
-        <div className="name-price">
-          <p>{name}</p>
-          <span>₹{price}</span>
-        </div>
-
+      <p>{name}</p>
+      <span>₹{price}</span>
+      <div>
         <button onClick={() => handler()}>
           {" "}
           <FaPlus />{" "}
